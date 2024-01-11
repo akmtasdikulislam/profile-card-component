@@ -4,17 +4,152 @@
     --dark-desaturated-blue: hsl(229, 23%, 23%);
     --dark-grayish-blue    : hsl(227, 10%, 46%);
     /* Neutral Colors */
-    --dark-grey            : hsl(0, 0%, 59%)
-        /* Initail font-size */
-        font-size          : 18px;
+    --dark-grey            : hsl(0, 0%, 59%);
+    /* Initail font-size */
+    font-size              : 18px;
 }
 
 *,
 ::before,
 ::after {
-    margin    : 0;
-    padding   : 0;
-    box-sizing: border-box;
-    font-family: 'Kumbh Sans',
-        sans-serif;
+    box-sizing : border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin     : 0;
+    padding    : 0;
+}
+
+body {
+    align-items     : center;
+    background-color: var(--dark-cyan);
+    display         : flex;
+    flex-direction  : column;
+    height          : 100vh;
+    justify-content : center;
+    width           : 100vw;
+    overflow        : hidden;
+}
+
+.bg {
+    position: absolute;
+    width   : 50%;
+    height  : auto;
+}
+
+.bg1 {
+    top : -25em;
+    left: 0;
+
+}
+
+.bg2 {
+    bottom: -25em;
+    right : 0;
+}
+
+.profile-card-container {
+    width           : 20em;
+    height          : 22em;
+    background-color: white;
+    border-radius   : 1em;
+    overflow        : hidden;
+    z-index         : 9;
+    box-shadow      : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-image {
+    width   : 100%;
+    height  : 38%;
+    overflow: hidden;
+}
+
+.card-image img {
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    height         : 40%;
+    width          : 100%;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+}
+
+.profile-photo {
+    width        : max-content;
+    height       : max-content;
+    object-fit   : cover;
+    border-radius: 50%;
+    border       : 5px solid white;
+    position     : relative;
+    top          : -35%;
+}
+
+.card-body div {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    gap            : 1em;
+}
+
+.name {
+    text-align : center;
+    font-weight: 700;
+    color      : var(--dark-desaturated-blue);
+}
+
+.age {
+    font-weight: 400;
+    color      : var(--dark-grey);
+}
+
+.location {
+    text-align : center;
+    color      : var(--dark-grey);
+    font-size  : .85em;
+    line-height: 1.5em;
+}
+
+.card-body div,
+.location {
+    position: relative;
+    top     : -2em;
+}
+
+.card-footer {
+    width          : 100%;
+    height         : 22%;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-evenly;
+    border-top     : 1px solid lightgray;
+}
+
+.card-footer>* {
+    text-align: center;
+}
+
+.card-footer p.count {
+    font-weight: 700;
+    color      : var(--dark-desaturated-blue);
+}
+
+.card-footer p.title {
+    font-size  : .75em;
+    color      : var(--dark-grey);
+    line-height: 2em;
+}
+
+.attribution {
+    margin-top: 1.5em;
+    font-size : 11px;
+    text-align: center;
+    color     : var(--dark-desaturated-blue);
+}
+
+.attribution a {
+    color: white;
 }
