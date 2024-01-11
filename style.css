@@ -47,7 +47,7 @@ body {
 }
 
 .profile-card-container {
-    width           : 20em;
+    width           : 18em;
     height          : 22em;
     background-color: white;
     border-radius   : 1em;
@@ -152,4 +152,20 @@ body {
 
 .attribution a {
     color: white;
+}
+
+@media (max-width: 375px) {
+    .bg {
+        width: 125%;
+    }
+
+    .bg1 {
+        top : -10em;
+        left: -15em;
+    }
+
+    .bg2 {
+        bottom: -10em;
+        right : -15em;
+    }
 }
