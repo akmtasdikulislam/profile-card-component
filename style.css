@@ -9,6 +9,7 @@
     font-size              : 18px;
 }
 
+/* Initalization */
 *,
 ::before,
 ::after {
@@ -29,6 +30,7 @@ body {
     overflow        : hidden;
 }
 
+/* Background Images */
 .bg {
     position: absolute;
     width   : 50%;
